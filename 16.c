@@ -89,7 +89,6 @@ int main () {
 	bool should_show_grid = false;
 	bool should_check_for_game_over = true;
 	bool should_move_automatically = true;
-	bool is_main_menu_active = true;
 
 	Vector2 food = random_cell((float)grid_size);
 

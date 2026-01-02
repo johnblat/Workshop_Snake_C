@@ -1,4 +1,3 @@
-rem cl.exe  /Zi /Od /W4 /MDd /NODEFAULTLIB:library pong.c raylib\lib\raylib.lib user32.lib gdi32.lib winmm.lib shell32.lib /link /DEBUG
 
 if not defined VSCMD_VER (
     call vcvars64.bat
