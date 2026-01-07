@@ -228,21 +228,25 @@ int main () {
 				bool is_head_too_far_down = head_cell.y >= grid_size;
 
 				if (is_head_too_far_left) {
+					snake[0] = snake[snake_head_index];
 					snake_head_index = 0;
 					snake[snake_head_index].x += 1;
 					snake_direction = RIGHT;
 					next_snake_direction = RIGHT;
 				} else if (is_head_too_far_right) {
+					snake[0] = snake[snake_head_index];
 					snake_head_index = 0;
 					snake[snake_head_index].x -= 1;
 					snake_direction = LEFT;
 					next_snake_direction = LEFT;
 				} else if (is_head_too_far_up) {
+					snake[0] = snake[snake_head_index];
 					snake_head_index = 0;
 					snake[snake_head_index].y += 1;
 					snake_direction = DOWN;
 					next_snake_direction = DOWN;
 				} else if (is_head_too_far_down) {
+					snake[0] = snake[snake_head_index];
 					snake_head_index = 0;
 					snake[snake_head_index].y -= 1;
 					snake_direction = UP;
